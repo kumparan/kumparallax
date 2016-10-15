@@ -29,13 +29,13 @@ class Kumparallax extends Component {
         <div id="overflow" ref={ref => this.overflow = ref}>
           <div id="container">
             <div id="parallax" style={{ backgroundImage: `url(${this.props.parallaxImage})` }}>
-              {this.props.parallaxHeader ? this.props.parallaxHeader : <div style={{ height: 400 }}>You can add anything here actually</div>}
+              {this.props.parallaxHeader ? this.props.parallaxHeader : <div style={{ height: 400 }} />}
             </div>
             <div id="content" style={{
               marginBottom: (0 - 5 - this.state.parallaxHeight),
               paddingBottom: this.state.parallaxHeight
             }}>
-              <div className="magic-pixel"></div>
+              <div className="magic-pixel" />
               {this.props.parallaxContent}
             </div>
           </div>
