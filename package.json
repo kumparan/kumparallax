@@ -1,12 +1,12 @@
 {
-  "name": "reactproject",
+  "name": "kumparallax",
   "version": "1.0.0",
-  "description": "Init project",
-  "main": "index.js",
+  "description": "React component to perform parallax",
+  "main": "src/App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "agungsuryabangsa@gmail.com",
+  "author": "agungsuryabangsa@kumparan.com",
   "license": "ISC",
   "dependencies": {
     "react": "^15.4.0-rc.4",
