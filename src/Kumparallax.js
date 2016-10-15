@@ -33,7 +33,7 @@ class Kumparallax extends Component {
             </div>
             <div id="content" style={{
               marginBottom: (0 - 5 - this.state.parallaxHeight),
-              paddingBottom: this.state.parallaxHeight
+              paddingBottom: (5 + this.state.parallaxHeight)
             }}>
               <div className="magic-pixel" />
               {this.props.parallaxContent}
