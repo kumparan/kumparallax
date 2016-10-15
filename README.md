@@ -8,3 +8,5 @@ The component is made to be as reusable as possible. There are three props that 
 1. <b>parallaxImage</b>: the source of parallax image url
 2. <b>parallaxHeader</b>: the element that will overlay the parallax. The parallax element will suit the height of this element. By default, the parallax height is 400px.
 3. <b>parallaxContent</b>: the scrollable element next to the parallax.
+
+![](https://github.com/kumparan/kumparallax/blob/master/Kumparallax.gif)
