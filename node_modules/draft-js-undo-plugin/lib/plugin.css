@@ -1,0 +1,36 @@
+.draftJsUndoPlugin__button__3Vugn {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  height: 1.5em;
+  color: #888;
+  border-radius: 1.5em;
+  line-height: 1.2em;
+  cursor: pointer;
+  background-color: #fff;
+  width: 2.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.draftJsUndoPlugin__button__3Vugn:focus {
+  background-color: #eee;
+  color: #999;
+  outline: 0; /* reset for :focus */
+}
+
+.draftJsUndoPlugin__button__3Vugn:hover {
+  background-color: #eee;
+  color: #999;
+}
+
+.draftJsUndoPlugin__button__3Vugn:active {
+  background-color: #ddd;
+  color: #777;
+}
+
+.draftJsUndoPlugin__button__3Vugn:disabled {
+  background-color: #F5F5F5;
+  color: #ccc;
+}

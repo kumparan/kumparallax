@@ -1,0 +1,78 @@
+
+
+html, body {
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+
+body {
+  /* Without this compositing trigger, Edge does not correctly parallax until
+     a repaint is triggered otherwise. */
+  /* transform: translateZ(0); */
+}
+
+#overflow {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+#parallax {
+  background: 50% 50% / cover;
+  position: relative;
+  transform: translateZ(-2px) scale(3);
+  transform-style: preserve-3d;
+  transform-origin: 0% 0% 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+#container {
+  position: relative;
+}
+
+#content {
+  background: white;
+  position: relative;
+}
+
+.magic-fixed-pixel {
+  /* Without this fixed position element, Edge does not correctly update the
+     parallax position until it is forced to repaint. */
+  position: fixed;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  z-index: 1;
+}
+
+/* This magic pixel div is necessary to get the #content div to paint its
+   background to the top of its bounds. Otherwise the background is only painted
+   where the content starts (excluding margins). */
+.magic-pixel {
+  width: 1px;
+  height: 1px;
+}
+
+.box {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.overflow-parallax #overflow,
+.sticky-parallax #container {
+  perspective: 1px;
+  perspective-origin: 0% 0%;
+}
+
+.overflow-parallax #container {
+  transform-style: preserve-3d;
+}
+
+.sticky-parallax #parallax {
+  position: -webkit-sticky;
+  top: 0;
+}Ï
