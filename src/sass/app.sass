@@ -1,0 +1,57 @@
+html,
+body
+	margin: 0
+	padding: 0
+	height: 100%
+
+#overflow
+	height: 100%
+	overflow-y: scroll
+	overflow-x: hidden
+	-webkit-overflow-scrolling: touch
+
+#parallax
+	background: 50% 50% / cover
+	position: relative
+	transform: translateZ(-2px) scale(3)
+	transform-style: preserve-3d
+	transform-origin: 0% 0% 0px
+	width: 100%
+	z-index: -1
+
+#container 
+  	position: relative
+
+
+#content 
+  	background: white
+  	position: relative
+
+.magic-fixed-pixel 
+  	position: fixed
+  	top: 0
+  	width: 1px
+  	height: 1px
+  	z-index: 1
+
+.magic-pixel 
+  	width: 1px
+  	height: 1px
+
+.box
+  	padding: 10px
+  	border: 1px solid black
+  	text-align: center
+
+.overflow-parallax #overflow,
+.sticky-parallax #container 
+  	perspective: 1px
+  	perspective-origin: 0% 0%
+
+.overflow-parallax #container
+  	transform-style: preserve-3d
+
+.sticky-parallax #parallax 
+  	position: -webkit-sticky
+  	top: 0
+
