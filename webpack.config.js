@@ -3,8 +3,6 @@ module.exports = {
     app: ['./src/App.js']
   },
   output: {
-    path: './public/assets',
-    publicPath: '/assets/',
     filename: 'bundle.js'
   },
   module: {
